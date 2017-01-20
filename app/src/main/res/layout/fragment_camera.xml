@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.steadtech.motivationmirror.fragments.CameraFragment">
+
+
+    <com.steadtech.motivationmirror.modals.SquareCameraPreview
+        android:id="@+id/camera_preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/cover_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_alignTop="@+id/camera_preview_view"
+        android:background="@color/bg_color" />
+
+    <View
+        android:id="@+id/cover_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_alignBottom="@+id/camera_preview_view"
+        android:background="@color/bg_color" />
+
+    <TextView
+        android:id="@+id/tv_quotes"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/camera_tools_view"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1"
+        android:singleLine="false"
+        android:text="Hi, How Are You???? Hi, I am good."
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/camera_tools_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_color">
+
+        <ImageView
+            android:id="@+id/gallery_image"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:background="@drawable/gallery"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/capture_image_button"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:contentDescription="@string/app_name"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/squarecamera__capture_photo_button" />
+
+        <LinearLayout
+            android:id="@+id/flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/flash_icon"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:contentDescription="@string/app_name"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/auto_flash_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:text="Auto"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

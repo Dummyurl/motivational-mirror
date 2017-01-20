@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Motivation Mirror App</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_quote">Add Your Quote</string>
+    <string name="motivationalmirror__request_write_storage_permission_text">Approval is needed to save your photo on your device</string>
+
+    <string name="pro_version">Pro Version</string>
+    <string name="frames_InAppQuotes">Purchase Pro Version for more frames</string>
+    <string name="message_InAppQuotes">Buy Pro Version to create your own message and get over 100 quotes per session</string>
+    <string name="picture_InAppQuotes">With the Pro Version you get over 100 quotes to picture. Select OK to upgrade now!</string>
+    <string name="internet_connection">Internet Connection Error</string>
+    <string name="internet_connection_low">Please connect to working Internet Connection</string>
+    <string name="please_add_quotes">Please Add Your Quote</string>
+    <string name="hash_message">#MotivationMirrorApp</string>
+    <string name="camera_permission_request">Camera permission needed. Please allow in App Settings for additional functionality.</string>
+    <string name="base64EncodedPublicKey">"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgtWibycNmknfvURg8MG6d+XexsbDYE7zkDT6PhGm/raZGtNXWXWHX/AnELcBOYlD/NQVr8aTozVMAVuqPwELtQMX0WWRsVVFVY8+rG3AKQCS0IzinO4LacxZnu9AjpO8/OxaeGFb1H9ppUT4cDdSXZdA7QrbMlLHpUWJZu4/QzwHf+06Eow6TOvf+pw7D10xY05APFF4gtWaB7iULycQJUgipp/ZcUUcL8UTTw1n2FJu710xtDa9znJckeh7cgQIiW1nx3L+1rXViEylDttAWqVxmiIbHwQtl2oFTLj/KKC57G6/r2hDf6Hocnd5QzumsRBkOkx+ak+GbboiRWoh9QIDAQAB"</string>
+
+    <integer-array name="frame_array">
+        <item>@drawable/frame_old_one</item>
+        <item>@drawable/frame_old_two</item>
+        <item>@drawable/frame_old_three</item>
+        <item>@drawable/frame_old_four</item>
+        <item>@drawable/frame_old_five</item>
+        <item>@drawable/frame_old_six</item>
+        <item>@drawable/frame_old_seven</item>
+        <item>@drawable/frame_old_eight</item>
+        <item>@drawable/frame_old_nine</item>
+        <item>@drawable/frame</item>
+        <item>@drawable/frame_one</item>
+        <item>@drawable/frame_two</item>
+        <item>@drawable/frame_three</item>
+        <item>@drawable/frame_four</item>
+        <item>@drawable/frame_five</item>
+        <item>@drawable/frame_six</item>
+        <item>@drawable/frame_seven</item>
+        <item>@drawable/frame_eight</item>
+        <item>@drawable/frame_nine</item>
+        <item>@drawable/frame_ten</item>
+        <item>@drawable/frame_eleven</item>
+        <item>@drawable/frame_twelve</item>
+        <item>@drawable/frame_thirteen</item>
+        <item>@drawable/frame_fourteen</item>
+        <item>@drawable/frame_fifteen</item>
+        <item>@drawable/frame_sixteen</item>
+        <item>@drawable/frame_seventeen</item>
+        <item>@drawable/frame_eighteen</item>
+        <item>@drawable/frame_ninteen</item>
+        <item>@drawable/frame_twenty</item>
+        <item>@drawable/sport_one</item>
+        <item>@drawable/sport_two</item>
+        <item>@drawable/sport_three</item>
+        <item>@drawable/sport_four</item>
+        <item>@drawable/frame_twentyfive</item>
+
+    </integer-array>
+</resources>

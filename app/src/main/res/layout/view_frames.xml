@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img_frames"
+        android:layout_width="@dimen/_45sdp"
+        android:contentDescription="@string/app_name"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/img_picture"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/lock_icon" />
+
+</RelativeLayout>

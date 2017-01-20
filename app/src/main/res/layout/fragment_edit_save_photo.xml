@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context="com.steadtech.motivationmirror.fragments.EditSavePhotoFragment">
+
+    <ImageButton
+        android:id="@+id/forward"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/forward_icon" />
+
+    <ImageButton
+        android:id="@+id/cancel"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/app_name"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/close_dark_bg" />
+
+    <RelativeLayout
+        android:id="@+id/relate_up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frame_bottom"
+        android:layout_below="@+id/forward"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/frame_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_quotes_edit"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frame_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <include
+            android:id="@+id/include_button_view"
+            layout="@layout/fragment_bottom_buttons"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/include_frames_view"
+            layout="@layout/frames_layout"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
