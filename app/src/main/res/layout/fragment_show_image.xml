@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color"
-    tools:context="com.steadtech.motivationmirror.fragments.ShowImageFragment">
+    tools:context="com.motivationselfie.fragments.ShowImageFragment"
+    tools:ignore="Overdraw">
 
     <Button
         android:id="@+id/back"
@@ -13,17 +15,28 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/back_icon"
-        android:onClick="onCancel" />
+        android:background="@drawable/back_clickable"
+        android:onClick="onCancel"
+        tools:ignore="RtlHardcoded" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+        tools:ignore="RtlHardcoded" />
 
     <ImageView
         android:id="@+id/imgWishPost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/relate_share"
-        android:contentDescription="@string/app_name"
         android:layout_below="@+id/back"
         android:layout_marginTop="@dimen/_10sdp"
+        android:contentDescription="@string/app_name"
         android:scaleType="centerCrop" />
 
     <RelativeLayout
@@ -33,13 +46,13 @@
         android:layout_alignParentBottom="true">
 
         <Button
-            android:id="@+id/btn_share_bg"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
             android:layout_centerInParent="true"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            android:background="@drawable/upload_bg" />
+            android:background="@drawable/upload_bg"
+            tools:ignore="RtlHardcoded" />
 
         <Button
             android:id="@+id/btn_share"
@@ -48,7 +61,17 @@
             android:layout_centerInParent="true"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            android:background="@drawable/upload_icon" />
+            android:background="@drawable/upload_clickable"
+            tools:ignore="RtlHardcoded" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_home_footer" />
 
     </RelativeLayout>
 

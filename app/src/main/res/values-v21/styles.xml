@@ -6,7 +6,7 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
-    <style name="motivationalmirror__CameraFullScreenTheme" parent="motivationalmirror__CameraFullScreenTheme.Base">
+    <style name="motivationselfie_CameraFullScreenTheme" parent="motivationselfie_CameraFullScreenTheme.Base">
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 

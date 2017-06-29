@@ -1,11 +1,11 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="motivationalmirror__CameraFullScreenTheme" parent="motivationalmirror__CameraFullScreenTheme.Base">
+    <style name="motivationselfie_CameraFullScreenTheme" parent="motivationselfie_CameraFullScreenTheme.Base">
 
     </style>
 
-    <style name="motivationalmirror__CameraFullScreenTheme.Base" parent="Theme.AppCompat.NoActionBar">
+    <style name="motivationselfie_CameraFullScreenTheme.Base" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -13,11 +13,11 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <style name="motivationalmirror__CameraFullScreenTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="motivationselfie_CameraFullScreenTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="motivationalmirror__CameraFullScreenTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="motivationselfie_CameraFullScreenTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="motivationalmirror__CameraFullScreenTheme.NoUI" parent="motivationalmirror__CameraFullScreenTheme.Base">
+    <style name="motivationselfie_CameraFullScreenTheme.NoUI" parent="motivationselfie_CameraFullScreenTheme.Base">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@null</item>

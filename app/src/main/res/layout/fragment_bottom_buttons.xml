@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/linear_button_view"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="@color/bg_color"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="@dimen/_5sdp"
     android:orientation="horizontal"
-    android:visibility="visible">
+    android:visibility="visible"
+    tools:ignore="Overdraw">
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp">
+        android:layout_marginTop="@dimen/_25sdp"
+        tools:ignore="RtlHardcoded">
 
         <Button
-            android:id="@+id/btn_quote_bg"
             android:layout_width="@dimen/_45sdp"
             android:layout_height="@dimen/_45sdp"
             android:layout_centerInParent="true"
@@ -27,7 +28,7 @@
             android:layout_width="@dimen/_28sdp"
             android:layout_height="@dimen/_28sdp"
             android:layout_centerInParent="true"
-            android:background="@drawable/quote_icon"
+            android:background="@drawable/quote_clickable"
             android:gravity="center"
             android:src="@drawable/quote_icon" />
     </RelativeLayout>
@@ -43,7 +44,6 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/btn_frames_bg"
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_45sdp"
                 android:layout_centerInParent="true"
@@ -54,7 +54,7 @@
                 android:layout_width="@dimen/_28sdp"
                 android:layout_height="@dimen/_28sdp"
                 android:layout_centerInParent="true"
-                android:background="@drawable/frame_icon" />
+                android:background="@drawable/frame_clickable" />
 
         </RelativeLayout>
 
@@ -69,7 +69,7 @@
                 android:layout_width="@dimen/_45sdp"
                 android:layout_height="@dimen/_45sdp"
                 android:layout_centerInParent="true"
-                android:background="@drawable/refresh_new" />
+                android:background="@drawable/refresh_clickable" />
 
             <TextView
                 android:id="@+id/tv_count"
@@ -77,11 +77,10 @@
                 android:layout_height="@dimen/_25sdp"
                 android:layout_centerInParent="true"
                 android:gravity="center"
-                android:text="3"
+                android:text="@string/_3"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/_15sdp" />
         </RelativeLayout>
-
 
     </LinearLayout>
 
@@ -89,10 +88,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp">
+        android:layout_marginTop="@dimen/_25sdp"
+        tools:ignore="RtlHardcoded">
 
         <Button
-            android:id="@+id/btn_likes_bg"
             android:layout_width="@dimen/_45sdp"
             android:layout_height="@dimen/_45sdp"
             android:layout_centerInParent="true"

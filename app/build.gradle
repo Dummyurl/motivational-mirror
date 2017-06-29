@@ -1,20 +1,46 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "com.steadtech.motivationmirror"
+        applicationId "com.motivationselfie"
         minSdkVersion 15
-        targetSdkVersion 23
-        versionCode 4
-        versionName "1.0.3"
+        targetSdkVersion 25
+        versionCode 2
+        versionName "1.0.1"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
-            minifyEnabled false
+            shrinkResources true
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def project = "MotivationSelfie"
+                    //noinspection GroovyUnusedAssignment
+                    def SEP = "_"
+                    //noinspection GroovyUnusedAssignment
+                    def SEP_START = "("
+                    //noinspection GroovyUnusedAssignment
+                    def SEP_CLOSE = ")"
+                    //noinspection GroovyUnusedAssignment
+                    def buildType = variant.variantData.variantConfiguration.buildType.name
+                    //noinspection GroovyUnusedAssignment
+                    def version = variant.versionName
+                    def date = new Date();
+                    //noinspection GroovyUnusedAssignment
+                    def formattedDate = date.format('dd-MMM-yyyy')
+
+                    def newApkName = project + ".apk"
+
+                    output.outputFile = new File(output.outputFile.parent, newApkName)
+                }
+            }
         }
     }
 }
@@ -22,6 +48,8 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.google.android.gms:play-services-ads:11.0.1'
+    testCompile 'junit:junit:4.12'
 }

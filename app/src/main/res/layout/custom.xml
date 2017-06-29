@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/edt_background"
@@ -32,7 +33,6 @@
         android:typeface="sans" />
 
     <View
-        android:id="@+id/view_outer"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="@dimen/_10sdp"
@@ -57,16 +57,16 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:gravity="center"
-            android:text="Ok"
+            android:text="@string/ok"
             android:textAllCaps="false"
             android:textColor="@color/bg_color_list_select"
-            android:typeface="serif" />
+            android:typeface="serif"
+            tools:ignore="ButtonOrder" />
 
         <View
-            android:id="@+id/view_inner"
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"></View>
+            android:background="@android:color/darker_gray"/>
 
         <Button
             android:id="@+id/button_Cancel"
@@ -78,7 +78,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:gravity="center"
-            android:text="Cancel"
+            android:text="@string/cancel"
             android:textAllCaps="false"
             android:textColor="@color/bg_color_list_select"
             android:typeface="serif" />

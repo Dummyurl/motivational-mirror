@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/edt_background"
@@ -28,10 +29,10 @@
         android:paddingRight="@dimen/_10sdp"
         android:text=""
         android:textColor="@android:color/black"
-        android:textSize="@dimen/_13sdp" />
+        android:textSize="@dimen/_13sdp"
+        tools:ignore="TextFields" />
 
     <View
-        android:id="@+id/view_outer"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/darker_gray">
@@ -53,12 +54,8 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:gravity="center"
-            android:text="Add"
+            android:text="@string/add"
             android:textColor="@color/bg_color_list_select"
             android:typeface="serif" />
-
-
     </LinearLayout>
-
-
 </LinearLayout>

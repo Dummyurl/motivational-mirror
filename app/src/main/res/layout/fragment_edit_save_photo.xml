@@ -1,9 +1,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color"
-    tools:context="com.steadtech.motivationmirror.fragments.EditSavePhotoFragment">
+    tools:context="com.motivationselfie.fragments.EditSavePhotoFragment"
+    tools:ignore="Overdraw">
 
     <ImageButton
         android:id="@+id/forward"
@@ -12,19 +14,21 @@
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
         android:layout_marginRight="@dimen/_10sdp"
-        android:contentDescription="@string/app_name"
         android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/forward_icon" />
+        android:background="@drawable/forward_clickable"
+        android:contentDescription="@string/app_name"
+        tools:ignore="RtlHardcoded" />
 
     <ImageButton
         android:id="@+id/cancel"
         android:layout_width="@dimen/_30sdp"
         android:layout_height="@dimen/_30sdp"
         android:layout_alignParentLeft="true"
-        android:contentDescription="@string/app_name"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/close_dark_bg" />
+        android:background="@drawable/close_clickable"
+        android:contentDescription="@string/app_name"
+        tools:ignore="RtlHardcoded" />
 
     <RelativeLayout
         android:id="@+id/relate_up"
@@ -39,8 +43,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
-            android:contentDescription="@string/app_name"
             android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
             android:scaleType="centerCrop" />
 
         <ImageView
@@ -48,8 +52,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
-            android:contentDescription="@string/app_name"
             android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
             android:scaleType="centerCrop" />
 
         <TextView
@@ -66,16 +70,15 @@
             android:text=""
             android:textColor="@android:color/white"
             android:textSize="@dimen/_14sdp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="Deprecated" />
     </RelativeLayout>
-
 
     <RelativeLayout
         android:id="@+id/frame_bottom"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_150sdp"
-        android:layout_alignParentBottom="true"
-        android:gravity="center">
+        android:layout_alignParentBottom="true">
 
         <include
             android:id="@+id/include_button_view"
@@ -87,6 +90,14 @@
             layout="@layout/frames_layout"
             android:visibility="gone" />
 
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_home_footer" />
 
     </RelativeLayout>
 

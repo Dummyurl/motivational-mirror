@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color_list"
-    tools:context="com.steadtech.motivationmirror.fragments.QuotesListFragment">
+    tools:context="com.motivationselfie.fragments.QuotesListFragment">
 
     <ImageButton
         android:id="@+id/img_back"
@@ -13,9 +13,10 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/back_icon"
+        android:background="@drawable/back_clickable"
         android:contentDescription="@string/app_name"
-        android:onClick="onCancel" />
+        android:onClick="onCancel"
+        tools:ignore="RtlHardcoded" />
 
     <ListView
         android:id="@+id/lv_quotes"
@@ -25,7 +26,7 @@
         android:layout_below="@+id/img_back"
         android:layout_marginTop="@dimen/_10sdp"
         android:divider="@color/bg_color_list_select"
-        android:dividerHeight="@dimen/_1sdp"></ListView>
+        android:dividerHeight="@dimen/_1sdp"/>
 
     <RelativeLayout
         android:id="@+id/relate_add_quote"
@@ -40,29 +41,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables,UselessParent">
 
             <ImageView
-                android:id="@+id/img_add_quote"
                 android:layout_width="@dimen/_40sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:background="@drawable/add_quote_icon"
+                android:background="@drawable/ic_add_circle_black_24dp"
                 android:contentDescription="@string/app_name" />
 
             <TextView
-                android:id="@+id/tv_add_your_quote"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:gravity="center"
                 android:text="@string/add_quote"
-                android:textColor="@color/bg_color_list_select"
-                android:textSize="@dimen/_15sdp" />
-
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15sdp"
+                tools:ignore="RtlHardcoded" />
 
         </LinearLayout>
-
-
     </RelativeLayout>
-
 </RelativeLayout>
