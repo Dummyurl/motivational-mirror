@@ -19,17 +19,17 @@
     <string name="dummy_text">Hi, How Are You???? Hi, I am good.</string>
     <string name="auto">Auto</string>
 
-    <!--&lt;!&ndash; AdMob ad unit IDs &ndash;&gt;-->
-    <!--<string name="add_Id">ca-app-pub-7493083145656430~2573147905</string>-->
-    <!--<string name="banner_home_footer">ca-app-pub-7493083145656430/4049881105</string>-->
-    <!--<string name="interstitial_full_screen">ca-app-pub-7493083145656430/5526614301</string>-->
     <string name="motivation">Motivation</string>
     <string name="selfie">Selfie</string>
 
+    <!-- iamdeveloper7272 email AdMob ad unit IDs-->
+    <string name="banner_home_footer">ca-app-pub-7493083145656430/4049881105</string>
+    <string name="banner_home_footer2">ca-app-pub-7493083145656430/6152224827</string>
+    <string name="interstitial_full_screen">ca-app-pub-7493083145656430/5526614301</string>
+
     <!-- aroraneha8650 email id AdMob ad unit IDs -->
-    <string name="add_Id">ca-app-pub-3104530433760081~9474342656</string>
-    <string name="banner_home_footer">ca-app-pub-3104530433760081/1951075851</string>
-    <string name="interstitial_full_screen">ca-app-pub-3104530433760081/3427809056</string>
+    <!--<string name="banner_home_footer">ca-app-pub-3104530433760081/1951075851</string>-->
+    <!--<string name="interstitial_full_screen">ca-app-pub-3104530433760081/3427809056</string>-->
 
     <integer-array name="frame_array">
         <item>@drawable/frame_old_one</item>
